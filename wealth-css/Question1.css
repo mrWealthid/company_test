@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-size: small;
+}
+
+.form-wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30px auto;
+  border: 2px solid gainsboro;
+  border-top: 5px solid goldenrod;
+}
+.my-form h3 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 23px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+input[type="text"] {
+  width: 100%;
+  /* padding: 3px 25px; */
+}
+
+.input-group {
+  width: 100%;
+}
+.name-group,
+.radio-group {
+  display: flex;
+  gap: 5px;
+}
+
+.my-btn {
+  background: goldenrod;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 8px 0px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.my-btn:hover {
+  background-color: #f0cc72;
+}
+.input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  /* position: relative; */
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+}
+
+.my-input,
+.my-select {
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+}
+
+.my-select {
+  border: 1px solid gainsboro;
+}
+.radio-label,
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.my-input {
+  flex: 2;
+  border-left: 1px solid gainsboro;
+}
+.fa {
+  padding: 0px 8px;
+}
+.fa-envelope {
+  font-size: small !important ;
+}
+
+@media screen and (max-width: 992px) {
+  .my-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my-form {
+    width: 95%;
+  }
+  .input-group {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .my-form h3 {
+    font-size: 14px;
+  }
+  .name-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

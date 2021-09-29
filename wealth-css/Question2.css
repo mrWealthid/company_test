@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30px auto;
+  border: 1px solid gainsboro;
+}
+
+.form-wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.my-input {
+  flex: 2;
+  border: 1px solid gainsboro;
+}
+
+input,
+select {
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+}
+
+.name-group {
+  display: flex;
+  gap: 10px;
+}
+
+.name-group input,
+.my-input {
+  border: 8px double white;
+  width: 100%;
+  background: gainsboro;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.btn-input {
+  border: 8px double white;
+  background: gainsboro;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 15%;
+  color: gray;
+  cursor: pointer;
+}
+
+.fa {
+  color: gray;
+  font-size: x-large !important;
+}
+
+.fa-envelope {
+  font-size: large !important ;
+}
+
+.my-img {
+  width: 100%;
+}
+.img-container {
+  width: 100px;
+  border-radius: 20px;
+  margin: 0px auto;
+  border: 8px double white;
+  background: gainsboro;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.btn-group {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .my-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my-form {
+    width: 95%;
+  }
+  .input-group {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn-input {
+    width: 35%;
+  }
+}

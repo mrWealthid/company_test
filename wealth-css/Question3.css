@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: small;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto;
+  border: 1px solid gainsboro;
+  background-color: gainsboro;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  justify-content: center;
+  gap: 15px;
+  width: 95%;
+  margin: 20px auto;
+}
+.form-wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 12px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.input-wrapper {
+  flex-basis: 50%;
+  display: flex;
+  gap: 10px;
+}
+
+.input-group1 {
+  padding: 5px;
+  background-color: white;
+}
+
+.input-group-last {
+  flex: 2;
+}
+
+.input-label {
+  width: 100%;
+  padding: 5px 0px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-img {
+  width: 100%;
+}
+.img-container {
+  width: 150px;
+  border-radius: 20px;
+  background: gainsboro;
+  padding: 4px 10px;
+  margin-left: 75px;
+}
+
+.img-container::after {
+  content: "Browse";
+  color: blue;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.name-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input [type="email"],
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+
+.my-referral {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+.input-group1 {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input-groups {
+  flex-basis: 30%;
+}
+.my-referral input {
+  border: 1px solid gainsboro;
+  padding: 6px;
+}
+
+.my-referral button {
+  border: none;
+  background-color: rgba(55, 65, 81);
+  width: 150px;
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.my-referral button:hover {
+  background-color: #607392;
+}
+.input-group3 {
+  display: flex;
+  flex-basis: 45%;
+  gap: 10px;
+}
+
+.input-group3 label,
+.radio-group label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.file-upload {
+  width: 100%;
+}
+
+.my-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name-group2 {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.hidden-input {
+  visibility: hidden;
+  flex: 1;
+}
+.my-btn {
+  border: none;
+  background: #b7465b;
+  width: 130px;
+  color: white;
+  padding: 8px 20px;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.my-btn:hover {
+  background: crimson;
+}
+
+.my-btn1 {
+  flex: 1;
+}
+
+.fa {
+  font-size: xx-small !important;
+  color: red;
+}
+
+/* @media screen and (max-width: 992px) {
+} */
+
+@media screen and (max-width: 1024px) {
+  .my-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .my-form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .name-group {
+    flex-direction: column;
+  }
+  .name-group2 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .my-btn1 {
+    text-align: end;
+  }
+
+  .img-container {
+    margin: 0px auto;
+  }
+
+  .form-group p {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
